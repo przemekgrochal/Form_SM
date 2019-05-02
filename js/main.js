@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
   		var radio = document.querySelectorAll(".radio");
   		if(!radio[0].checked){
   			var radio1 = document.getElementById("radio1");
-			radio1.innerHTML = "Proszę wypełnić to pole";
+			radio1.innerHTML = "Proszę wyrazić zgodę";
 			radio1.classList.add("info-error-active");
   			radio[0].parentNode.style.color = "#e90027";
   			this.sendRadio1 = false;
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   		if(!radio[1].checked){
   			var radio2 = document.getElementById("radio2");
-			radio2.innerHTML = "Proszę wypełnić to pole";
+			radio2.innerHTML = "Proszę wyrazić zgodę";
 			radio2.classList.add("info-error-active");
   			radio[1].parentNode.style.color = "#e90027";
   			this.sendRadio2 = false;
