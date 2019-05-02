@@ -1,0 +1,137 @@
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+.modal-content {
+  box-sizing: border-box !important; 
+  max-width: 500px;
+  height: 500px;
+  background-color: #fefefe;
+  margin: auto;
+  font-family: 'Lato', sans-serif;
+}
+.modal-header {
+  height: 126px;
+  text-align: center;
+  font-weight: 400;
+  position: relative;
+  top: 30px;
+}
+.modal-header-txt2 {
+  font-size: 17px;
+}
+.modal-header-txt2-span {
+  font-weight: 900;
+  font-size: 22px;
+}
+.modal-image {
+  height: 235px;
+  background-image: url("../img/background.png");
+  background-position: center;
+}
+.modal-footer {
+  display: flex;
+  justify-content: space-around;
+}
+.modal-txt {
+  width: 200px;
+  height: 105px;
+  font-size: 12px;
+  overflow-y: scroll;
+  margin-top: 12px;
+  margin-left: 12px;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background-color: #e5e5e5;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #535353; 
+  border-radius: 30px;
+}
+.modal-form {
+  box-sizing: border-box;
+  width: 263px;
+  height: 318px;
+  position: relative;
+  top: -200px;
+  background-color: #242424;
+  opacity: 0.9;
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
+  margin-right: 18px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+.modal-input {
+  box-sizing: border-box;
+  border:none;
+  background-color: #fff;
+  width: 225px;
+  height: 26px;
+  border-radius: 15px;
+  margin-bottom: 18px;
+  padding-left: 20px;
+}
+.modal-label {
+  font-size: 10px;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  margin-bottom: 15px;
+}
+.modal-input:focus { 
+  outline:none; 
+}
+.modal-btn {
+  box-sizing: border-box;
+  border:none;
+  background-color: #fff;
+  width: 115px;
+  height: 27px;
+  border-radius: 15px;
+  margin-bottom: 18px;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.modal-btn:hover {
+  background-color: #7f962f; 
+  color: #fff;
+}
+.modal-btn:focus {
+  outline: none;
+}
+.modal-label-expand {
+  display: contents;
+  color: #7f962f;
+  cursor: pointer;
+}
+.info-error-notActive {
+  display: none;
+}
+.info-error-active {
+  display: block;
+  color: red;
+  font-size: 11px;
+  margin-top: -18px;
+  margin-bottom: 10px;
+}

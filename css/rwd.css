@@ -1,0 +1,20 @@
+@media (max-width: 578px) { 
+	.modal-content {
+		margin-left: 5%;
+    	margin-right: 5%;
+	}
+}
+@media (max-width: 544px) { 
+	.modal-txt {
+		display: none;
+	}
+	.modal-header {
+		font-size: 12px;
+	}
+	.modal-header-txt2 {
+		font-size: 13px;
+	}
+	.modal-header-txt2-span {
+		font-size: 14px;
+	}
+}
