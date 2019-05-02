@@ -95,11 +95,8 @@ document.addEventListener("DOMContentLoaded", function() {
   	},
 
   	formValidation: function(e) {
+      e.preventDefault();
   		var self = ModalNewsletter;
-  		var btn = document.getElementById("btn-form");
-  		btn.removeEventListener("change", self.formValidation, false);
-
-  		e.preventDefault();
 
   		for(var i=0; i<self.input.length; i++){
            var inputs = self.input[i];
