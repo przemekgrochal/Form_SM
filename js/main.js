@@ -113,16 +113,16 @@ document.addEventListener("DOMContentLoaded", function() {
            if(inputs.type === "radio"){
            		self.validationRadio();
            }
-		   self.sendForm();	  		
+		       self.sendForm();	  		
         }
   	},
 
   	sendForm: function() {
-		if((this.sendRadio1 === true) && (this.sendRadio2 === true) && 
-		   (this.sendNumber === true) && (this.sendEmail === true) &&
-		   (this.sendText === true)) {
-			  this.form.submit();
-		}
+    		if((this.sendRadio1 === true) && (this.sendRadio2 === true) && 
+    		   (this.sendNumber === true) && (this.sendEmail === true) &&
+    		   (this.sendText === true)) {
+    			  this.form.submit();
+    		}
   	},
 
   	showModal: function() {
